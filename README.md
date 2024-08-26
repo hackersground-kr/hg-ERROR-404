@@ -55,7 +55,7 @@ gh auth login
 Azure CLI설치
 -------------
 Window
-  -https://aka.ms/installazurecliwindowsx64
+  - https://aka.ms/installazurecliwindowsx64
 macOS
   ```bash
   brew update && brew install azure-cli
