@@ -70,6 +70,51 @@ GitHub CLI설치
 -------------
 https://github.com/cli/cli/releases/download/v2.55.0/gh_2.55.0_windows_amd64.msi
 
+>2. Visual Studio Code에서 아래 명령어를 실행시켜 Azure 및 GitHub에 로그인합니다.
+```
+# Azure Developer CLI login
+azd auth login
+
+# Azure CLI login
+az login
+
+# GitHub CLI login
+GITHUB_TOKEN=
+gh auth login
+```
+
+>3. 로그인이 끝났다면 아래 명령어를 통해 제대로 로그인이 되어 있는지 확인합니다.
+```
+# Azure Developer CLI
+azd auth login --check-status
+
+# Azure CLI
+az account show
+
+# GitHub CLI
+gh auth status
+```
+
+Azure Developer CLI로 배포 준비하기
+===================================
+>1. 아래 명령어를 차례로 실행시켜 배포 환경을 준비합니다.
+```
+# bash/zsh
+cd $REPOSITORY_ROOT/workshop
+AZURE_ENV_NAME="{{ GITHUB_ID }}"
+azd init -e $AZURE_ENV_NAME
+
+# PowerShell
+cd $REPOSITORY_ROOT/workshop
+$AZURE_ENV_NAME = "{{ GITHUB_ID }}"
+azd init -e $AZURE_ENV_NAME
+```
+
+>중요: ```{{ GITHUB_ID }}```는 자신의 GitHub 아이디로 변경해야 합니다. 예를 들어 GitHub 아이디가 ```sample```라면 ```{{ GITHUB_ID }}```를 ```sample```로 변경하세요.
+>2. 배포 환경 초기화 방법을 물어보면 Use code in the current directory 옵션을 선택합니다.
+>3. Azure Container Apps를 사용해 배포한다고 물어봅니다. Confirm and continue initializing my app 옵션을 선택합니다.
+>
+
 Azure Container Apps로 배포하기
 ===============================
 >1. 아래 명령어를 실행시켜 Aspire 앱을 Azure로 배포합니다.
