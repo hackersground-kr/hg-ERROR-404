@@ -100,12 +100,12 @@ Azure Developer CLI로 배포 준비하기
 >1. 아래 명령어를 차례로 실행시켜 배포 환경을 준비합니다.
 ```
 # bash/zsh
-cd $REPOSITORY_ROOT/workshop
+cd $REPOSITORY_ROOT/frontend
 AZURE_ENV_NAME="{{ GITHUB_ID }}"
 azd init -e $AZURE_ENV_NAME
 
 # PowerShell
-cd $REPOSITORY_ROOT/workshop
+cd $REPOSITORY_ROOT/frontend
 $AZURE_ENV_NAME = "{{ GITHUB_ID }}"
 azd init -e $AZURE_ENV_NAME
 ```
