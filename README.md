@@ -1,4 +1,4 @@
-![스크린샷 2024-08-27 014833](https://github.com/user-attachments/assets/bd9e283f-d167-4649-a2be-fe0f504c31a2)# `{ERROR-404}` - `{의성친구들}`
+# `{ERROR-404}` - `{의성친구들}`
 
 해커그라운드 해커톤에 참여하는 `{{ 팀 이름 }}` 팀의 `{{ 제품/서비스 이름 }}`입니다.
 
@@ -99,7 +99,7 @@ GitHub CLI설치
 https://github.com/cli/cli/releases/download/v2.55.0/gh_2.55.0_windows_amd64.msi
 
 >2. Visual Studio Code에서 터미널을 실행시켜 아래 명령어로 Azure 및 GitHub에 로그인합니다.
-
+![스크린샷 2024-08-27 014833](https://github.com/user-attachments/assets/bd9e283f-d167-4649-a2be-fe0f504c31a2)
 ```
 # Azure Developer CLI login
 azd auth login
