@@ -39,7 +39,7 @@ Azure Cli설치
 - Window
   https://aka.ms/installazurecliwindowsx64
 - macOS
-  ```
+  ```base
   brew update && brew install azure-cli
   ```
 
