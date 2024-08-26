@@ -55,11 +55,15 @@ gh auth login
 Azure CLI설치
 -------------
 Window
-  - https://aka.ms/installazurecliwindowsx64
+  https://aka.ms/installazurecliwindowsx64
 macOS
-  ```bash
+  bash```bash
   brew update && brew install azure-cli
   ```
+Linux
+bash```bash
+  curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+```
 
 Azure Container Apps로 배포하기
 ===============================
