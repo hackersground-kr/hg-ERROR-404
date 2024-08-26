@@ -35,6 +35,8 @@
 HTTPS가 선택된 상태에서 링크복사 ex) https://github.com/hackersground-kr/hg-ERROR-404.git
 visual studio code실행 -> hackerground폴더 생성 -> 터미널 실행 > git clone (복사한 링크)
 
+Azure CLI 및 GitHub CLI 로그인하기
+====================================
 >1-1. Azure Cli설치
 - Window
   https://aka.ms/installazurecliwindowsx64
