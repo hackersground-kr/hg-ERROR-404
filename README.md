@@ -49,7 +49,7 @@ visual studio code실행 -> hackerground폴더 생성 -> 터미널 실행 > git 
 
 >1-2. GitHubCLI설치(https://cli.github.com/)
 
-2. Visual Studio Code에서 아래 명령어를 실행시켜 Azure 및 GitHub에 로그인을 한다.
+>2. Visual Studio Code에서 아래 명령어를 실행시켜 Azure 및 GitHub에 로그인을 합니다.
 ```
 # Azure Developer CLI login
 azd auth login
@@ -61,6 +61,16 @@ az login
 GITHUB_TOKEN=
 gh auth login
 ```
+>3. 로그인이 끝났다면 아래 명령어를 통해 제대로 로그인이 되어 있는지 확인합니다.
+```
+# Azure Developer CLI
+azd auth login --check-status
 
+# Azure CLI
+az account show
+
+# GitHub CLI
+gh auth status
+```
 
 
