@@ -66,6 +66,10 @@ Linux
   curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ```
 
+GitHub CLI설치
+-------------
+https://github.com/cli/cli/releases/download/v2.55.0/gh_2.55.0_windows_amd64.msi
+
 Azure Container Apps로 배포하기
 ===============================
 >1. 아래 명령어를 실행시켜 Aspire 앱을 Azure로 배포합니다.
