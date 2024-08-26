@@ -113,7 +113,7 @@ azd init -e $AZURE_ENV_NAME
 >중요: ```{{ GITHUB_ID }}```는 자신의 GitHub 아이디로 변경해야 합니다. 예를 들어 GitHub 아이디가 ```sample```라면 ```{{ GITHUB_ID }}```를 ```sample```로 변경하세요.
 >2. 배포 환경 초기화 방법을 물어보면 Use code in the current directory 옵션을 선택합니다.
 >3. Azure Container Apps를 사용해 배포한다고 물어봅니다. Confirm and continue initializing my app 옵션을 선택합니다.
->
+>4. Docker Desktop실행
 
 Azure Container Apps로 배포하기
 ===============================
