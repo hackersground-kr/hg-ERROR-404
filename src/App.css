@@ -1,0 +1,340 @@
+/* 공통 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 헤더 스타일 */
+header {
+    background: #ffffff;
+    color: #fff;
+    padding: 1rem 0;
+    border-bottom: 2px solid #fff;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 10rem;
+}
+
+nav ul li {
+    margin-left: 5rem;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input[type="text"] {
+    background-color: #d0c7c7;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-form button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    background: #afa6a6;
+    color: #000000;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background: #ddd;
+}
+
+/* 메인 콘텐츠 스타일 */
+main {
+    padding: 2rem 0;
+    flex: 1;
+}
+
+main .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* 광고 슬라이더 스타일 */
+.adv-slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.adv {
+    width: 100%;
+    max-width: 1765px;
+    max-height: 195px;
+    object-fit: cover;
+    display: block;
+}
+
+/* 홍보 슬라이더 스타일 */
+.promotion-slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+    overflow: hidden;
+}
+
+.promotion {
+    max-width: 569px;
+    max-height: 480px;
+    object-fit: cover;
+    display: block;
+}
+
+/* 영상과 커뮤니티 섹션 스타일 */
+.media-community {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.video {
+    flex: 2;
+}
+
+.community {
+    border-radius: 2%;
+    background-color: #ecd44a;
+    flex: 1;
+}
+
+.community h2 {
+    padding: 10px;
+}
+
+.community ul {
+    margin-left: 2%;
+    list-style: none;
+    padding: 0;
+}
+
+.community ul li {
+    width: 98%;
+    padding: 10px;
+    border-radius: 2%;
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+}
+
+.community a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.community a strong {
+    display: block;
+}
+
+.community a span {
+    color: #020101;
+}
+.community a:hover {
+    text-decoration: underline;
+}
+.community a:hover strong {
+    text-decoration: underline;
+}
+/* 컨테이너 스타일 */
+.container2 {
+    background-color: #afa6a6; /* 배경색 */
+    border-radius: 15px; /* 모서리 둥글게 */
+    width: 80%; /* 너비 설정 */
+    margin: 0 auto; /* 가운데 정렬 */
+    margin-top: 20px;
+    padding: -2 px; /* 안쪽 여백 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+/* 제목 스타일 */
+.main2 {
+    font-size: 2.5rem; /* 글자 크기 */
+    color: #333; /* 텍스트 색상 */
+    margin: 0; /* 기본 여백 제거 */
+    padding: 20px; /* 안쪽 여백 */
+}
+
+/* container3 스타일 추가 */
+.container3 {
+    display: flex; /* Flexbox 사용 */
+    justify-content: space-between; /* 자식 요소 간의 여백 조정 */
+    gap: 20px; /* 각 박스 간의 간격 */
+    margin: 20px auto; /* 상하 마진과 중앙 정렬 */
+    width: 80%; /* 너비 설정 */
+}
+
+/* 각 박스 스타일 추가 */
+.container3 .box1,
+.container3 .box2 {
+    flex: 1; /* 각 박스가 동일한 크기를 가지도록 설정 */
+    padding: 20px; /* 내부 여백 */
+    background-color: #f4f4f4; /* 박스 배경색 */
+    border-radius: 10px; /* 모서리 둥글게 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+.container3 .box1 h2,
+.container3 .box2 h2 {
+    margin-bottom: 10px; /* 제목과 본문 간격 조정 */
+}
+
+.container3 .box1 p,
+.container3 .box2 p {
+    margin-bottom: 15px; /* 본문과 링크 간격 조정 */
+}
+
+/* 푸터 스타일 */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.publicpromotion {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.public-facilities {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    width: 43%; /* 너비 조정 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+.public-facilities h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.public-facilities ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.public-facilities li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+.public-facilities li:hover {
+    background-color: #e0e0e0;
+}
+
+.public-facilities a {
+    text-decoration: none;
+    color: #333;
+}
+
+.public-facilities strong {
+    font-weight: bold;
+}
+
+.public-facilities span {
+    display: block;
+    font-size: 14px;
+    color: #666;
+}
+
+.slider__box {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider__img {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider__slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slider__slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slider__controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slider__controls button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.slider__controls button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}

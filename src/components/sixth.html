@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>의성친구들</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <a href="https://mainpage">
+        <img class="img-concert" src="logo.png" />
+      </a>
+      <h2>의성 사촌마을</h2>
+    </header>
+
+    <div class="sliderbox">
+      <div class="sliderimg">
+        <div class="slider s1">
+          <img
+            src="/src/img//tourist attraction-image/sixth1.jpg"
+            alt="이미지1"
+          />
+        </div>
+        <div class="slider s2">
+          <img
+            src="/src/img//tourist attraction-image/sixth2.jpg"
+            alt="이미지2"
+          />
+        </div>
+        <div class="slider s3">
+          <img
+            src="/src/img//tourist attraction-image/sixth3.jpg"
+            alt="이미지3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="text-area">
+        <h3>평가 및 리뷰</h3>
+        <div style="display: flex; align-items: center; flex-direction: column">
+          <div style="display: flex; align-items: center">
+            <p style="font-size: 30px; margin-right: 10px" id="current-rating">
+              5.0
+            </p>
+            <div class="star-rating" id="star-rating">
+              <span class="star selected">★</span>
+              <span class="star selected">★</span>
+              <span class="star selected">★</span>
+              <span class="star selected">★</span>
+              <span class="star selected">★</span>
+            </div>
+          </div>
+          <p class="review-count">리뷰 100개</p>
+        </div>
+      </div>
+      <div class="text-area">
+        <h3>상세 정보</h3>
+        <h4>입장료: 무료</h4>
+        <br />
+        <h4>전화번호: 070-4203-0233</h4>
+        <br />
+        <h4>운영시간: 없음</h4>
+        <br />
+        <h4>의성 지역의 대표적인 양반마을</h4>
+      </div>
+      <div class="map-container">
+        <div id="map-title"><h3>위치</h3></div>
+        <div id="map"></div>
+      </div>
+    </div>
+
+    <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=dbf876381d64d55086f061d7d2705304&libraries=services"></script>
+    <script>
+      const container = document.getElementById("map");
+      const options = {
+        center: new kakao.maps.LatLng(36.42571420886864, 128.76190981453456),
+        level: 4,
+      };
+
+      const map = new kakao.maps.Map(container, options);
+      const markerPosition = new kakao.maps.LatLng(
+        36.42571420886864,
+        128.76190981453456
+      );
+      const marker = new kakao.maps.Marker({
+        position: markerPosition,
+      });
+
+      marker.setMap(map);
+
+      const fixedRating = 5.0;
+
+      const setFixedRating = (rating) => {
+        const stars = document.querySelectorAll(".star");
+        stars.forEach((s) => {
+          s.classList.add("selected");
+        });
+        document.getElementById("current-rating").innerText = rating.toFixed(1);
+      };
+
+      setFixedRating(fixedRating);
+
+      // 슬라이더 자동 전환 기능
+      const sliderImages = document.querySelectorAll(".slider img");
+      let currentIndex = 0;
+
+      function showNextImage() {
+        sliderImages.forEach((img) => {
+          img.style.display = "none";
+        });
+        currentIndex = (currentIndex + 1) % sliderImages.length;
+        sliderImages[currentIndex].style.display = "block";
+      }
+
+      setInterval(showNextImage, 2000);
+      sliderImages[currentIndex].style.display = "block";
+    </script>
+  </body>
+</html>
