@@ -74,5 +74,46 @@ az account show
 # GitHub CLI
 gh auth status
 ```
+Azure Developer CLI로 배포 준비하기
+===================================
+>1. 아래 명령어를 차례로 실행시켜 배포 환경을 준비합니다.
+```
+# bash/zsh
+cd $REPOSITORY_ROOT/workshop
+AZURE_ENV_NAME="{{ GITHUB_ID }}"
+azd init -e $AZURE_ENV_NAME
+
+# PowerShell
+cd $REPOSITORY_ROOT/workshop
+$AZURE_ENV_NAME = "{{ GITHUB_ID }}"
+azd init -e $AZURE_ENV_NAME
+```
+>중요: {{ GITHUB_ID }}는 자신의 GitHub 아이디로 변경해야 합니다. 예를 들어 GitHub 아이디가 example라면 {{ GITHUB_ID }}를 example로 변경하세요.
+
+Azure Container Apps로 배포하기
+===============================
+>1. 아래 명령어를 실행시켜 Aspire 앱을 Azure로 배포합니다.
+```
+azd up
+```
+>2. 어떤 Azure 구독을 사용할 것인지 물어봅니다. 사용할 구독을 hackerground로 선택합니다.
+>3. 어느 지역에 배포할 것인지 묻습니다. 여기선 Korea Central을 선택합니다.
+
+GitHub Actions로 배포 자동화하기
+=================================
+>1. 아래 명령어를 차례로 실행시켜 배포 자동화를 위한 준비를 합니다.
+```
+mkdir -p .github/workflows
+cd $frontend
+```
+>2. 아래 명령어를 실행시켜 GitHub Actions 워크플로우를 실행시킬 수 있는 환경을 설정합니다.
+```
+azd pipeline config
+```
+>3. 설정 마지막에 ```Would you like to commit and push your local changes to start the configured CI pipeline?``` 라는 질문이 나오면 ```n```를 선택하고 종료합니다.
+
+
+
+
 
 
