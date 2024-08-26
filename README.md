@@ -57,11 +57,11 @@ Azure CLI설치
 Window
   https://aka.ms/installazurecliwindowsx64
 macOS
-  bash```bash
-  brew update && brew install azure-cli
+  ```bash
+    brew update && brew install azure-cli
   ```
 Linux
-bash```bash
+```bash
   curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ```
 
