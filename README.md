@@ -42,6 +42,12 @@ Azure Cli설치
   ```bash
   brew update && brew install azure-cli
   ```
+- Linux
+  ```bash
+  curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+  ```
+
+GitHubCLI설치(https://cli.github.com/)
 
 
 
