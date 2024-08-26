@@ -30,6 +30,14 @@
 > Visual Studio Code, Docker, Azure 계정, 깃허브 계정, git
 
 ## 시작하기
+git이 없을시
+-----------
+>1. 아래 링크에서 각 운영체제에 맞게 설치
+https://git-scm.com/downloads
+>2. git 버전 확인
+```
+git --versoin
+```
 
 > github의 hackerground-kr / hg-ERROR-404에서 상단의 <> Code(초록색 버튼)클릭
 HTTPS가 선택된 상태에서 링크복사 ex) https://github.com/hackersground-kr/hg-ERROR-404.git
