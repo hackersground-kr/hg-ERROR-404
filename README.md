@@ -39,6 +39,15 @@ https://git-scm.com/downloads
 ```
 git --versoin
 ```
+>3.  winget을 사용한 설치
+      - winget 설치 확인: 먼저 winget이 설치되어 있는지 확인합니다.
+      ```bash
+      winget --version
+      ```
+>4. Git 설치 명령어: 아래 명령어를 명령 프롬프트(CMD) 또는 PowerShell에서 실행하여 Git을 설치합니다.
+```bash
+winget install --id Git.Git -e --source winget
+```
 
 > github의 hackerground-kr / hg-ERROR-404에서 상단의 <> Code(초록색 버튼)클릭
 HTTPS가 선택된 상태에서 링크복사 ex) https://github.com/hackersground-kr/hg-ERROR-404.git
