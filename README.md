@@ -98,7 +98,7 @@ GitHub CLI설치
 -------------
 https://github.com/cli/cli/releases/download/v2.55.0/gh_2.55.0_windows_amd64.msi
 
->2. Visual Studio Code에서 아래 명령어를 실행시켜 Azure 및 GitHub에 로그인합니다.
+>2. Visual Studio Code에서 터미널을 실행시켜 아래 명령어로 Azure 및 GitHub에 로그인합니다.
 ```
 # Azure Developer CLI login
 azd auth login
