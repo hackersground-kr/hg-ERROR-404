@@ -27,8 +27,21 @@
 
 ### 사전 준비 사항
 
-> **여러분의 제품/서비스를 Microsoft 애저 클라우드에 배포하기 위해 사전에 필요한 준비 사항들을 적어주세요.**
+> Visual Studio Code, Docker, Azure 계정, 깃허브 계정
 
 ## 시작하기
 
-> **여러분의 제품/서비스를 Microsoft 애저 클라우드에 배포하기 위한 절차를 구체적으로 나열해 주세요.**
+> github의 hackerground-kr / hg-ERROR-404에서 상단의 <> Code(초록색 버튼)클릭
+HTTPS가 선택된 상태에서 링크복사 ex) https://github.com/hackersground-kr/hg-ERROR-404.git
+visual studio code실행 -> hackerground폴더 생성 -> 터미널 실행 > git clone (복사한 링크)
+
+Azure Cli설치
+- Window
+  https://aka.ms/installazurecliwindowsx64
+- macOS
+  ```
+  brew update && brew install azure-cli
+  ```
+
+
+
