@@ -57,7 +57,9 @@ Azure CLI설치
 Window
   -https://aka.ms/installazurecliwindowsx64
 macOS
-  -```brew update && brew install azure-cli```
+  ```bash
+  brew update && brew install azure-cli
+  ```
 
 Azure Container Apps로 배포하기
 ===============================
