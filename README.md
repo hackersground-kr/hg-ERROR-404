@@ -74,6 +74,12 @@ gh auth login
 >중요: 만약 ```azd auth login --use-device-code false``` 또는 ```az login``` 명령어 실행시 새 브라우저 탭이 뜨면서 404 에러가 날 경우, 주소창의 URL 값을 복사해서 새 zsh 터미널을 열고 ```curl <복사한 URL>```을 해 줍니>다.
 >2. Visual Studio Code의 경우
 
+Azure Developer cli설치
+----------------------
+```
+winget install microsoft.azd
+```
+
 Azure CLI설치
 -------------
 Window
