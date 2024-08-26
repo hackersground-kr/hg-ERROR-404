@@ -36,59 +36,7 @@ HTTPS가 선택된 상태에서 링크복사 ex) https://github.com/hackersgroun
 visual studio code실행 -> hackerground폴더 생성 -> 터미널 실행 > git clone (복사한 링크)
 
 Azure CLI 및 GitHub CLI 로그인하기
-====================================
->1-1. Azure Cli설치
-- Window
-  https://aka.ms/installazurecliwindowsx64
-- macOS
-  ```bash
-  brew update && brew install azure-cli
-  ```
-- Linux
-  ```bash
-  curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
-  ```
-
->1-2. GitHubCLI설치(https://cli.github.com/)
-
->2. Visual Studio Code에서 아래 명령어를 실행시켜 Azure 및 GitHub에 로그인을 합니다.
-```
-# Azure Developer CLI login
-azd auth login
-
-# Azure CLI login
-az login
-
-# GitHub CLI login
-GITHUB_TOKEN=
-gh auth login
-```
->3. 로그인이 끝났다면 아래 명령어를 통해 제대로 로그인이 되어 있는지 확인합니다.
-```
-# Azure Developer CLI
-azd auth login --check-status
-
-# Azure CLI
-az account show
-
-# GitHub CLI
-gh auth status
-```
-Azure Developer CLI로 배포 준비하기
-===================================
->1. 아래 명령어를 차례로 실행시켜 배포 환경을 준비합니다.
-```
-# bash/zsh
-cd $REPOSITORY_ROOT/workshop
-AZURE_ENV_NAME="{{ GITHUB_ID }}"
-azd init -e $AZURE_ENV_NAME
-
-# PowerShell
-cd $REPOSITORY_ROOT/workshop
-$AZURE_ENV_NAME = "{{ GITHUB_ID }}"
-azd init -e $AZURE_ENV_NAME
-```
->중요: {{ GITHUB_ID }}는 자신의 GitHub 아이디로 변경해야 합니다. 예를 들어 GitHub 아이디가 example라면 {{ GITHUB_ID }}를 example로 변경하세요.
+=====================다
 
 Azure Container Apps로 배포하기
 ===============================
