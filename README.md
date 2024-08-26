@@ -36,7 +36,28 @@ HTTPS가 선택된 상태에서 링크복사 ex) https://github.com/hackersgroun
 visual studio code실행 -> hackerground폴더 생성 -> 터미널 실행 > git clone (복사한 링크)
 
 Azure CLI 및 GitHub CLI 로그인하기
-=====================다
+==================================
+>1. GitHub Codespaces 인스턴스 안에서 아래 명령어를 실행시켜 Azure 및 GitHub에 로그인합니다.
+```
+# Azure Developer CLI login
+azd auth login --use-device-code=false
+
+# Azure CLI login
+az login
+
+# GitHub CLI login
+GITHUB_TOKEN=
+gh auth login
+```
+>중요: 만약 ```azd auth login --use-device-code false``` 또는 ```az login``` 명령어 실행시 새 브라우저 탭이 뜨면서 404 에러가 날 경우, 주소창의 URL 값을 복사해서 새 zsh 터미널을 열고 ```curl <복사한 URL>```을 해 줍니>다.
+>2. Visual Studio Code의 경우
+
+Azure CLI설치
+-------------
+Window
+  -https://aka.ms/installazurecliwindowsx64
+macOS
+  -```brew update && brew install azure-cli```
 
 Azure Container Apps로 배포하기
 ===============================
