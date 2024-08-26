@@ -35,7 +35,7 @@
 HTTPS가 선택된 상태에서 링크복사 ex) https://github.com/hackersground-kr/hg-ERROR-404.git
 visual studio code실행 -> hackerground폴더 생성 -> 터미널 실행 > git clone (복사한 링크)
 
->Azure Cli설치
+>1-1. Azure Cli설치
 - Window
   https://aka.ms/installazurecliwindowsx64
 - macOS
@@ -47,9 +47,9 @@ visual studio code실행 -> hackerground폴더 생성 -> 터미널 실행 > git 
   curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
   ```
 
-GitHubCLI설치(https://cli.github.com/)
+>1-2. GitHubCLI설치(https://cli.github.com/)
 
-Visual Studio Code에서 아래 명령어를 실행시켜 Azure 및 GitHub에 로그인을 한다.
+2. Visual Studio Code에서 아래 명령어를 실행시켜 Azure 및 GitHub에 로그인을 한다.
 ```
 # Azure Developer CLI login
 azd auth login
