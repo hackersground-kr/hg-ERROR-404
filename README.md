@@ -27,7 +27,7 @@
 
 ### 사전 준비 사항
 
-> Visual Studio Code, Docker, Azure 계정, 깃허브 계정
+> Visual Studio Code, Docker, Azure 계정, 깃허브 계정, git
 
 ## 시작하기
 
