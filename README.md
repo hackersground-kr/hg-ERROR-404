@@ -1,4 +1,4 @@
-# `{{ 팀 이름 }}` - `{{ 제품/서비스 이름 }}`
+# `{ERROR-404}` - `{의성친구들}`
 
 해커그라운드 해커톤에 참여하는 `{{ 팀 이름 }}` 팀의 `{{ 제품/서비스 이름 }}`입니다.
 
@@ -48,6 +48,19 @@ Azure Cli설치
   ```
 
 GitHubCLI설치(https://cli.github.com/)
+
+Visual Studio Code에서 아래 명령어를 실행시켜 Azure 및 GitHub에 로그인을 한다.
+```
+# Azure Developer CLI login
+azd auth login
+
+# Azure CLI login
+az login
+
+# GitHub CLI login
+GITHUB_TOKEN=
+gh auth login
+```
 
 
 
