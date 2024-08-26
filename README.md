@@ -77,7 +77,7 @@ gh auth login
 Azure Developer cli설치
 ----------------------
 ```
-winget install microsoft.azd
+winget install --id Microsoft.AzureDeveloperCLI -e
 ```
 
 Azure CLI설치
