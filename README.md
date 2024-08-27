@@ -74,7 +74,7 @@ brew --version
 ![스크린샷 2024-08-27 091613](https://github.com/user-attachments/assets/de95d67d-0e0e-4d74-af16-de6e3b05d844)
 
 >HTTPS가 선택된 상태에서 링크복사 ex) https://github.com/hackersground-kr/hg-ERROR-404.git
-visual studio code실행 -> 터미널 실행 -> 명령줄에 ls입력 > mkdir hackerground입력 > hackerground폴더 생성 > cd hackerground > git clone (복사한 링크) > cd (새로 생긴 폴더명)
+visual studio code실행 -> 터미널 실행 -> 명령줄에 ls입력 > 현재 위치를 desktop으로 이동후 mkdir hackerground입력 > hackerground폴더 생성 > cd hackerground > git clone (복사한 링크) > cd (새로 생긴 폴더명)
 ![스크린샷 2024-08-27 014833](https://github.com/user-attachments/assets/051bf22e-2afb-4ca2-b741-33cf99da6fe7)
 
 
@@ -162,12 +162,12 @@ Azure Developer CLI로 배포 준비하기
 >1. 아래 명령어를 차례로 실행시켜 배포 환경을 준비합니다.
 ```
 # bash/zsh
-cd $REPOSITORY_ROOT/frontend
+cd frontend
 AZURE_ENV_NAME="{{ GITHUB_ID }}"
 azd init -e $AZURE_ENV_NAME
 
 # PowerShell
-cd $REPOSITORY_ROOT/frontend
+cd frontend
 $AZURE_ENV_NAME = "{{ GITHUB_ID }}"
 azd init -e $AZURE_ENV_NAME
 ```
