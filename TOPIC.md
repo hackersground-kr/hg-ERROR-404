@@ -22,7 +22,7 @@
 
 
 ## 제품 소개 슬라이드
-[ERROR-404-1.pdf](https://github.com/user-attachments/files/16755901/ERROR-404-1.pdf)
+file:///D:/Downloads/ERROR-404-10.pdf
 
 
 ## 제품 소개 동영상
