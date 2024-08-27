@@ -75,7 +75,7 @@ brew --version
 
 
 
-> github의 hackerground-kr / hg-ERROR-404에서 상단의 <> Code(초록색 버튼)클릭
+> github의 hackerground-kr / hg-ERROR-404에서 상단의 Fork를 눌러서 create fork > 자신의 레퍼지토리에서 <> Code(초록색 버튼)클릭
 ![스크린샷 2024-08-27 091613](https://github.com/user-attachments/assets/de95d67d-0e0e-4d74-af16-de6e3b05d844)
 
 >HTTPS가 선택된 상태에서 링크복사 ex) https://github.com/hackersground-kr/hg-ERROR-404.git
