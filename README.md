@@ -44,10 +44,11 @@ git --versoin
  ```
  winget --version
  ```
-3-2. winget 설치 방법
+
+>3-2. winget 설치 방법
 아래 app installer설치(안에 winget이 내장되어 있음)
 https://apps.microsoft.com/detail/9nblggh4nns1?hl=en-us&gl=US
-
+>3-3. app installer가 깔려있는 경우 그냥 넘어가셔도 됩니다.
 >4. Git 설치 명령어: 아래 명령어를 명령 프롬프트(CMD) 또는 PowerShell에서 실행하여 Git을 설치합니다.
 ```
 winget install --id Git.Git -e --source winget
