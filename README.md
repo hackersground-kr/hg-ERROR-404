@@ -57,7 +57,8 @@ https://apps.microsoft.com/detail/9nblggh4nns1?hl=en-us&gl=US
 winget install --id Git.Git -e --source winget
 ```
 
->1. macOS인경우 아래명령어를 터미널에 입력
+macOS인경우 아래명령어를 터미널에 입력
+-------------------
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
