@@ -38,7 +38,7 @@ https://git-scm.com/downloads
 >1-2. 만약 본인의 컴퓨터가 최신 Windows 운영체제를 사용 중이라면, 64비트 버전을 선택하세요. 그러나 32비트 운영체제를 사용 중인 경우는 32비트 버전을 선택하세요.
 >3. git 버전 확인
 ```
-git --versoin
+git --version
 ```
 >3.  winget을 사용한 설치
       - winget 설치 확인: 먼저 winget이 설치되어 있는지 확인합니다.
