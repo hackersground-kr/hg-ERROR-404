@@ -52,6 +52,16 @@ https://apps.microsoft.com/detail/9nblggh4nns1?hl=en-us&gl=US
 
 >3-3. app installer가 깔려있는 경우 그냥 넘어가셔도 됩니다.
 
+>3-4. macOS인경우 아래명령어를 터미널에 입력
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+>3-5. 설치가 완료되면 Homebrew가 정상적으로 설치되었는지 확인합니다.
+```
+brew --version
+```
+
 >4. Git 설치 명령어: 아래 명령어를 명령 프롬프트(CMD) 또는 PowerShell에서 실행하여 Git을 설치합니다.
 ```
 winget install --id Git.Git -e --source winget
