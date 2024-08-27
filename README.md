@@ -1,4 +1,4 @@
-# `{ERROR-404}` - `{의성친구들}`
+![스크린샷 2024-08-27 091613](https://github.com/user-attachments/assets/dd09d7eb-c4fe-423a-8411-5990957ccf29)# `{ERROR-404}` - `{의성친구들}`
 
 해커그라운드 해커톤에 참여하는 `{{ 팀 이름 }}` 팀의 `{{ 제품/서비스 이름 }}`입니다.
 
@@ -58,8 +58,12 @@ winget install --id Git.Git -e --source winget
 ```
 
 > github의 hackerground-kr / hg-ERROR-404에서 상단의 <> Code(초록색 버튼)클릭
-HTTPS가 선택된 상태에서 링크복사 ex) https://github.com/hackersground-kr/hg-ERROR-404.git
+![스크린샷 2024-08-27 091613](https://github.com/user-attachments/assets/de95d67d-0e0e-4d74-af16-de6e3b05d844)
+
+>HTTPS가 선택된 상태에서 링크복사 ex) https://github.com/hackersground-kr/hg-ERROR-404.git
 visual studio code실행 -> hackerground폴더 생성 -> 터미널 실행 > git clone (복사한 링크)
+![스크린샷 2024-08-27 014833](https://github.com/user-attachments/assets/051bf22e-2afb-4ca2-b741-33cf99da6fe7)
+
 
 Azure CLI 및 GitHub CLI 로그인하기
 ==================================
