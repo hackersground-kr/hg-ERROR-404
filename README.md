@@ -30,6 +30,11 @@
 > Visual Studio Code, Docker, Azure 계정, 깃허브 계정, git
 
 ## 시작하기
+Visual Studio Code가 없을 시
+---------------------------
+아래 링크로 들어가 visual studio code를 다운받으세요
+https://code.visualstudio.com/
+
 git이 없을시
 -----------
 >1. 아래 링크에서 각 운영체제에 맞게 설치
