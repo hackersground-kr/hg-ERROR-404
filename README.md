@@ -116,6 +116,18 @@ GitHub CLI설치
 -------------
 https://github.com/cli/cli/releases/download/v2.55.0/gh_2.55.0_windows_amd64.msi
 
+macOS에서 GitHub CLI 설치
+-------------------------
+>1. Homebrew를 사용해 GitHub CLI 설치
+터미널을 열고 다음 명령어를 입력하세요.
+```bash
+brew install gh
+```
+>1-2. 설치 확인
+```
+gh --version
+```
+
 >2. Visual Studio Code에서 터미널을 실행시켜 아래 명령어로 Azure 및 GitHub에 로그인합니다.
 ![스크린샷 2024-08-27 014833](https://github.com/user-attachments/assets/bd9e283f-d167-4649-a2be-fe0f504c31a2)
 ```
